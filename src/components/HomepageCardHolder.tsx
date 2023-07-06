@@ -1,4 +1,11 @@
-import { AiFillInfoCircle } from "react-icons/ai";
+import {
+  FcFolder,
+  FcInfo,
+  FcApproval,
+  FcReading,
+  FcOnlineSupport,
+  FcAlphabeticalSortingAz,
+} from "react-icons/fc";
 import HomepageCard from "./HomepageCard";
 
 function HomepageCardHolder() {
@@ -17,16 +24,16 @@ function HomepageCardHolder() {
           }}
           actionText="Download CV"
           description="Find Something interesting about me."
-          icon={<AiFillInfoCircle />}
+          icon={<FcInfo />}
           name="Resume"
         />
         <HomepageCard
           action={() => {
             alert("ok");
           }}
-          actionText="View Message"
+          actionText="View projects"
           description="I'd like you explore my projects."
-          icon={<AiFillInfoCircle />}
+          icon={<FcFolder />}
           name="Projects"
         />
       </div>
@@ -37,8 +44,8 @@ function HomepageCardHolder() {
           }}
           actionText="Download CV"
           description="Find Something interesting about me."
-          icon={<AiFillInfoCircle />}
-          name="Resume"
+          icon={<FcApproval />}
+          name="Certifications"
         />
         <HomepageCard
           action={() => {
@@ -46,8 +53,28 @@ function HomepageCardHolder() {
           }}
           actionText="View Message"
           description="I'd like you explore my projects."
-          icon={<AiFillInfoCircle />}
-          name="Projects"
+          icon={<FcReading />}
+          name="Reading List"
+        />
+      </div>
+      <div className="mt-2 flex flex-col md:flex-row flex-grow gap-5">
+        <HomepageCard
+          action={() => {
+            alert("ok");
+          }}
+          actionText="Download CV"
+          description="Find Something interesting about me."
+          icon={<FcAlphabeticalSortingAz />}
+          name="Blog"
+        />
+        <HomepageCard
+          action={() => {
+            alert("ok");
+          }}
+          actionText="View Message"
+          description="I'd like you explore my projects."
+          icon={<FcOnlineSupport />}
+          name="Talk to me"
         />
       </div>
     </div>
