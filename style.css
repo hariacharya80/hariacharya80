@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@1,200&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -13,12 +14,15 @@ a {
 body {
   padding: 0 15vw;
 }
+header {
+  margin-top: 1rem;
+}
 #header-logo {
   font-size: 3rem;
   font-family: "Caprasimo", cursive;
 }
 #header-logo > a {
-  color: black;
+  color: #cd7687;
 }
 .header-wrapper {
   display: flex;
@@ -53,12 +57,26 @@ body {
   display: flex;
 }
 
+.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 .hero-left > h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2vh;
   font-family: "Oswald", sans-serif;
 }
 
 .hero-left > h3 {
-  font-family: "Ysabeau Infant", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 2vh 0;
+}
+.hero-left > div {
+  margin-top: 1.1rem;
+  margin-bottom: 1.1rem;
 }
 .hero-left > div > button {
   all: unset;
@@ -69,13 +87,17 @@ body {
 }
 .hero-left > div > button:hover {
   color: white;
-  background-color: rgb(131, 21, 21);
+  background-color: rgb(60, 0, 0);
   cursor: pointer;
 }
-
+.section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 3vh 0;
+}
 .project-container {
   background-color: rgb(243, 243, 243);
-  padding: 1px 1vw;
+  padding: 1vh 1vw;
   border-radius: 10px;
   margin: 1vh 0;
 }
@@ -83,9 +105,26 @@ body {
   background-color: rgb(169, 255, 226);
   cursor: pointer;
 }
+.project-container > h2 {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.project-container > h3 {
+  font: 0.9em sans-serif;
+  color: rgb(104, 104, 104);
+  margin: 0.5vh 0;
+}
+.project-container > div > button {
+  background-color: #ff007f;
+  color: white;
+  border: none;
+  padding: 1vh 1vw;
+  border-radius: 26px;
+}
 .cerficate {
   background-color: rgb(223, 223, 223);
   display: flex;
+  margin: 1vh 0;
   border-radius: 10px;
   align-items: center;
 }
@@ -93,11 +132,14 @@ body {
   background-color: rgb(191, 255, 234);
   cursor: pointer;
 }
+
 .cerficate > img {
   width: 150px;
+  margin: 10px;
   height: 150px;
   display: block;
-  border-radius: 16px;
+  border: 1px solid green;
+  border-radius: 25px;
 }
 
 footer > div {

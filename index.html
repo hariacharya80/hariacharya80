@@ -4,22 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hari Acharya - Web Developer</title>
+    <link rel="stylesheet" href="resetcss.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="header-wrapper">
       <h1 id="header-logo"><a href="/">Hari.</a></h1>
       <ul id="header-menu-wrapper">
-        <li><a href="#">Intro</a></li>
+        <li><a class="active" href="#">Intro</a></li>
         <li>
-          <a href="/projects.html">Projects</a>
+          <a href="projects.html">Projects</a>
         </li>
-        <li><a href="/stack.html">Stack</a></li>
+        <li><a href="stack.html">Stack</a></li>
         <li>
-          <a href="/reading.html">Reading List</a>
+          <a href="reading.html">Reading List</a>
         </li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </header>
     <main>
@@ -30,7 +31,7 @@
             I'm a front-end web developer. I love to code as it's my passion and
             am also a fan of open source projects. I also love reading tech
             blogs & all sorts of books, you can visit my reading list. I
-            contribute to open source and don't currently work at any company
+            contribute to open source and don't currently work at any company,
             looking for a job!
           </h3>
           <div>
@@ -48,49 +49,101 @@
         </div>
       </div>
       <div>
-        <h1>Projects</h1>
+        <h1 class="section-title">Projects</h1>
         <div class="project-wrapper">
           <div class="project-container">
-            <h2>Demo Project 1</h2>
+            <h2>Hotel Management System</h2>
+            <h3>HTML, CSS, JS, Next.js, Express, MongoDB</h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam laborum expedita aliquid autem assumenda, culpa
-              incidunt soluta facere voluptatum aspernatur?
+              This is a Hotel Management System that a hotel can use to manage
+              reservations, billing and other administration tasks. Cloud
+              database storage with MongoDB
             </p>
+            <div>
+              <button>🌐 Live Demo Preview</button>
+              <button>👁️ View Code</button>
+              <button>⬇️ Download Source Code</button>
+            </div>
           </div>
           <div class="project-container">
-            <h2>Demo Project 1</h2>
+            <h2>Mobile Shop Management System || CMS</h2>
+            <h3>M.E.R.N Stack</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Laboriosam laborum expedita aliquid autem assumenda, culpa
               incidunt soluta facere voluptatum aspernatur?
             </p>
+            <div>
+              <button>🌐 Live Demo Preview</button>
+              <button>👁️ View Code</button>
+              <button>⬇️ Download Source Code</button>
+            </div>
           </div>
           <div class="project-container">
-            <h2>Demo Project 1</h2>
+            <h2>Student Information System</h2>
+            <h3>Node.js, MongoDB, React and Express</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Laboriosam laborum expedita aliquid autem assumenda, culpa
               incidunt soluta facere voluptatum aspernatur?
             </p>
+            <div>
+              <button>🌐 Live Demo Preview</button>
+              <button>👁️ View Code</button>
+              <button>⬇️ Download Source Code</button>
+            </div>
           </div>
         </div>
       </div>
       <div>
-        <h1>Certification</h1>
-        <span
-          >I did have completed a lot of certifications offered by Cisco
-          Networking Academy, FreeCodeCamp.org and More.. with fulfills the lack
-          of a CS degree within me.</span
-        >
+        <h1 class="section-title">Certification</h1>
         <div class="cerficate">
-          <img
-            src="https://popsql.com/static/external-logos/freecodecamp.png"
-            alt="FreeCodeCamp"
-          />
+          <img src="images/cisco.png" alt="FreeCodeCamp" />
           <div>
-            <h1>Course Title</h1>
+            <h1>JavaScript Essentials</h1>
+            <span>Cisco Networking Academy</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              nesciunt repellendus dolor neque autem? Debitis corporis corrupti
+              exercitationem tempore saepe fugiat ducimus laboriosam,
+              repudiandae suscipit nobis rerum labore sit quas. Lorem, ipsum
+              dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+        <div class="cerficate">
+          <img src="images/freecodecamp.png" alt="FreeCodeCamp" />
+          <div>
+            <h1>Responsive Web Design Certification</h1>
             <span>FreeCodeCamp</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              nesciunt repellendus dolor neque autem? Debitis corporis corrupti
+              exercitationem tempore saepe fugiat ducimus laboriosam,
+              repudiandae suscipit nobis rerum labore sit quas. Lorem, ipsum
+              dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+        <div class="cerficate">
+          <img src="images/udacity.png" alt="FreeCodeCamp" />
+          <div>
+            <h1>Full Stack JavaScript Development</h1>
+            <span>FreeCodeCamp</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              nesciunt repellendus dolor neque autem? Debitis corporis corrupti
+              exercitationem tempore saepe fugiat ducimus laboriosam,
+              repudiandae suscipit nobis rerum labore sit quas. Lorem, ipsum
+              dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+        <div class="cerficate">
+          <img src="images/coursera.png" alt="FreeCodeCamp" />
+          <div>
+            <h1>Programming with JavaScript</h1>
+            <span>Coursera</span>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
               nesciunt repellendus dolor neque autem? Debitis corporis corrupti
