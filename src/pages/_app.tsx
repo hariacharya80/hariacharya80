@@ -10,7 +10,7 @@ function App() {
   const [activeMenu, setActiveMenu] = useState<string>("Intro");
 
   return (
-    <div className="px-2 md:px-[15vw] xl:px-[20vw]">
+    <div className="px-[5vw] md:px-[15vw] xl:px-[20vw]">
       <BrowserRouter>
         <Header currentMenu={activeMenu} setMenu={setActiveMenu} />
         <Routes>
