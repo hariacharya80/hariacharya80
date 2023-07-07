@@ -9,10 +9,8 @@ function Hero() {
       <div className="text-center md:text-left md:w-full">
         <h1 className="font-bold text-4xl">{"👋 Hello, I'm Hari Acharya"}</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          sapiente laborum voluptatibus pariatur quo fuga quidem harum velit!
-          Eius, sunt! Aspernatur nam sunt fuga minus distinctio fugiat voluptate
-          corrupti vero.
+          I'm passionate about creating beautiful and functional websites. Let's
+          work together to create something very awasome!
         </p>
         <HeaderSocialIcons />
       </div>

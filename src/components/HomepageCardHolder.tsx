@@ -7,8 +7,10 @@ import {
   FcAlphabeticalSortingAz,
 } from "react-icons/fc";
 import HomepageCard from "./HomepageCard";
+import { useNavigate } from "react-router-dom";
 
 function HomepageCardHolder() {
+  const navigate = useNavigate();
   return (
     <div className="mt-10">
       <h1 className="font-bold text-3xl">Explore this site</h1>
@@ -20,7 +22,7 @@ function HomepageCardHolder() {
       <div className="mt-2 flex flex-col md:flex-row flex-grow gap-5">
         <HomepageCard
           action={() => {
-            alert("ok");
+            navigate("https://www.resume.com/");
           }}
           actionText="Download CV"
           description="Find Something interesting about me."
@@ -29,7 +31,7 @@ function HomepageCardHolder() {
         />
         <HomepageCard
           action={() => {
-            alert("ok");
+            navigate("/projects");
           }}
           actionText="View projects"
           description="I'd like you explore my projects."
@@ -40,7 +42,7 @@ function HomepageCardHolder() {
       <div className="mt-2 flex flex-col md:flex-row flex-grow gap-5">
         <HomepageCard
           action={() => {
-            alert("ok");
+            navigate("/stack");
           }}
           actionText="Download CV"
           description="Find Something interesting about me."
@@ -49,7 +51,7 @@ function HomepageCardHolder() {
         />
         <HomepageCard
           action={() => {
-            alert("ok");
+            navigate("/reading");
           }}
           actionText="View Message"
           description="I'd like you explore my projects."
