@@ -7,6 +7,7 @@ import NotFound from "./404";
 import Skills from "./Skills";
 import Reading from "./Reading";
 import Contact from "./Contact";
+import Blog from "./Blog";
 
 function App() {
   return (
@@ -17,8 +18,8 @@ function App() {
           <Route path="/" element={<Index />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/reading" element={<Reading />} />
-          <Route path="/contact" element={<Index />} />
-          <Route path="/blog" element={<Index />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
