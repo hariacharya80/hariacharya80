@@ -1,15 +1,11 @@
 import SectionImage from "../components/SectionImage";
+import SkillsSection from "../components/SkillsSection";
 
 function Skills() {
   return (
     <div>
-      <div className="mt-[5vh]">
-        <h1 className="font-bold text-3xl">Skills</h1>
-        <p className="text-gray-500">
-          We all know that skills are the thing we need. Please consider
-          exploring some of my possibilities.
-        </p>
-      </div>
+      <SkillsSection />
+
       <SectionImage
         title="Certification"
         description="I have been certified by most reputed online platforms for web development including the Cisco Networking Academy and FreeCodeCamp."
