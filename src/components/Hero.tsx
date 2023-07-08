@@ -10,7 +10,7 @@ function Hero() {
         <h1 className="font-bold text-4xl">{"👋 Hello, I'm Hari Acharya"}</h1>
         <p>
           I'm passionate about creating beautiful and functional websites. Let's
-          work together to create something very awasome!
+          work together to create something very awesome!
         </p>
         <HeaderSocialIcons />
       </div>

@@ -45,7 +45,7 @@ function SkillsSection() {
         <div className="flex flex-col  md:flex-row w-full gap-2">
           <IndividualSkill
             color="text-green-500"
-            description="It's the power we have"
+            description="It's the power we have."
             icon={<GrNode />}
             name="Node.js"
             percent={100}
