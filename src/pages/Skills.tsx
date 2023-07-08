@@ -11,34 +11,35 @@ function Skills() {
         description="I have been certified by most reputed online platforms for web development including the Cisco Networking Academy and FreeCodeCamp."
         items={[
           {
-            description: "asdf",
-            title: "asdf",
+            description: "HTML and Responsive CSS with practical projects.",
+            title: "Responsive Web Desgin Certification",
             provider: "FreeCodeCamp",
-            url: "https://github.com/hariacharya80.png",
+            url: "/images/fcc.jpeg",
           },
           {
-            description: "asdf",
-            title: "asdf",
-            provider: "FreeCodeCamp",
-            url: "https://github.com/hariacharya80.png",
+            description: "Design, develop, and improve JavaScript programs.",
+            title: "JavaScript Essentials",
+            provider: "Cisco Networking Academy",
+            url: "/images/cisco.png",
           },
           {
-            description: "asdf",
-            title: "asdf",
-            provider: "FreeCodeCamp",
-            url: "https://github.com/hariacharya80.png",
+            description: "Learn the MERN stack with some prerequisites.",
+            title: "Full Stack Development with JavaScript",
+            provider: "Udacity",
+            url: "/images/udacity.webp",
           },
           {
-            description: "asdf",
-            title: "asdf",
+            description: "Full Data Structures and Algorithm with JavaScript.",
+            title: "JavaScript Algorithms and Data Structures Certification",
             provider: "FreeCodeCamp",
-            url: "https://github.com/hariacharya80.png",
+            url: "/images/fcc.jpeg",
           },
           {
-            description: "asdf",
-            title: "asdf",
+            description:
+              "Get going with the javascript libraries for frontend.",
+            title: "Front End Development Libraries Certification",
             provider: "FreeCodeCamp",
-            url: "https://github.com/hariacharya80.png",
+            url: "/images/fcc.jpeg",
           },
         ]}
       />

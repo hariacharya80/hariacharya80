@@ -21,7 +21,7 @@ function SkillsSection() {
       <div className="flex flex-col gap-2">
         <div className="flex flex-col  md:flex-row w-full gap-2 mt-2">
           <IndividualSkill
-            color="text-yellow-700"
+            color="text-yellow-500"
             description="Everyone knows HTML."
             icon={<AiFillHtml5 />}
             name="HTML"
