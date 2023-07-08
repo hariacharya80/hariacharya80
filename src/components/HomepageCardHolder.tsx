@@ -13,7 +13,7 @@ function HomepageCardHolder() {
   const navigate = useNavigate();
   return (
     <div className="mt-10">
-      <h1 className="font-bold text-3xl">Explore this site</h1>
+      <h1 className="font-bold text-3xl">Explore</h1>
       <p className="text-gray-500">
         This is my simple website where I share my latest projects, updates and
         some personal things that I want to share with the world. Please explore
@@ -22,10 +22,9 @@ function HomepageCardHolder() {
       <div className="mt-2 flex flex-col md:flex-row flex-grow gap-5">
         <HomepageCard
           action={() => {
-            navigate("https://www.resume.com/");
+            window.open("/resume.pdf", "_blank");
           }}
-          actionText="Download CV"
-          description="Find Something interesting about me."
+          description="View or download my resume"
           icon={<FcInfo />}
           name="Resume"
         />
@@ -33,7 +32,6 @@ function HomepageCardHolder() {
           action={() => {
             navigate("/projects");
           }}
-          actionText="View projects"
           description="I'd like you explore my projects."
           icon={<FcFolder />}
           name="Projects"
@@ -42,10 +40,9 @@ function HomepageCardHolder() {
       <div className="mt-2 flex flex-col md:flex-row flex-grow gap-5">
         <HomepageCard
           action={() => {
-            navigate("/stack");
+            navigate("/skills");
           }}
-          actionText="Download CV"
-          description="Find Something interesting about me."
+          description="Find Something interesting about my skills."
           icon={<FcApproval />}
           name="Certifications"
         />
@@ -53,8 +50,7 @@ function HomepageCardHolder() {
           action={() => {
             navigate("/reading");
           }}
-          actionText="View Message"
-          description="I'd like you explore my projects."
+          description="Find my reading list or suggest something new to read."
           icon={<FcReading />}
           name="Reading List"
         />
@@ -62,19 +58,17 @@ function HomepageCardHolder() {
       <div className="mt-2 flex flex-col md:flex-row flex-grow gap-5">
         <HomepageCard
           action={() => {
-            alert("ok");
+            navigate("/blog");
           }}
-          actionText="Download CV"
-          description="Find Something interesting about me."
+          description="Read something that I have posted recently."
           icon={<FcAlphabeticalSortingAz />}
           name="Blog"
         />
         <HomepageCard
           action={() => {
-            alert("ok");
+            navigate("/contact");
           }}
-          actionText="View Message"
-          description="I'd like you explore my projects."
+          description="Let's have something to chat about."
           icon={<FcOnlineSupport />}
           name="Talk to me"
         />

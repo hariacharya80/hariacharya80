@@ -5,7 +5,6 @@ interface cardInfo {
   icon: React.ReactNode;
   description: string;
   action: () => void;
-  actionText: string;
 }
 
 function HomepageCard({ name, icon, description, action }: cardInfo) {

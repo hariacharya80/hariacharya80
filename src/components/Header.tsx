@@ -1,119 +1,47 @@
-import { Dispatch, SetStateAction, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ImMenu } from "react-icons/im";
-interface headerState {
-  currentMenu: string;
-  setMenu: Dispatch<SetStateAction<string>>;
-}
+import { IoHome } from "react-icons/io5";
+import { BsFillFolderFill } from "react-icons/bs";
+import { GoLog } from "react-icons/go";
+import { AiFillCheckCircle, AiFillBook } from "react-icons/ai";
+import HeaderMenuButton from "./HeaderMenuButton";
 
-function Header({ currentMenu, setMenu }: headerState) {
-  const documentChange = () => {
-    setMenu("");
-  };
-  useEffect(() => {
-    if (document.location.pathname == "/") {
-      setMenu("Intro");
-    }
-    if (document.location.pathname == "/projects") {
-      setMenu("Projects");
-    }
-    if (document.location.pathname == "/stack") {
-      setMenu("Stack");
-    }
-    if (document.location.pathname == "/reading") {
-      setMenu("Reading");
-    }
-    if (document.location.pathname == "/blog") {
-      setMenu("Blog");
-    }
-    if (document.location.pathname == "/contact") {
-      setMenu("Contact");
-    }
-  }, [currentMenu, setMenu]);
-
+function Header() {
   return (
     <header className="flex justify-between items-center mt-2 md:mt-4 ">
       <h1 className="font-bold  text-5xl">
-        <Link
-          onClick={() => {
-            documentChange();
-          }}
-          to={"/"}
-        >
-          Hari.
-        </Link>
+        <Link to={"/"}>Hari.</Link>
       </h1>
-      <div className="flex md:hidden font-bold text-3xl mx-2">
+      <div className="flex md:hidden font-bold text-3xl items-center mx-2">
         <ImMenu />
       </div>
-      <ul className="hidden md:flex items-center gap-5">
-        <li>
-          <Link
-            onClick={() => {
-              documentChange();
-            }}
-            className={currentMenu === "Intro" ? "underline font-bold" : ""}
-            to={"/"}
-          >
-            Intro
-          </Link>
-        </li>
-        <li>
-          <Link
-            onClick={() => {
-              documentChange();
-            }}
-            className={currentMenu === "Projects" ? "underline font-bold" : ""}
-            to={"/projects"}
-          >
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link
-            onClick={() => {
-              documentChange();
-            }}
-            className={currentMenu === "Stack" ? "underline font-bold" : ""}
-            to={"/stack"}
-          >
-            Stack
-          </Link>
-        </li>
-        <li>
-          <Link
-            onClick={() => {
-              documentChange();
-            }}
-            className={currentMenu === "Reading" ? "underline font-bold" : ""}
-            to={"/reading"}
-          >
-            Reading List
-          </Link>
-        </li>
-        <li>
-          <Link
-            onClick={() => {
-              documentChange();
-            }}
-            className={currentMenu === "Blog" ? "underline font-bold" : ""}
-            to={"/blog"}
-          >
-            Blog
-          </Link>
-        </li>
-        <li>
-          <Link
-            onClick={() => {
-              documentChange();
-            }}
-            className={currentMenu === "Contact" ? "underline font-bold" : ""}
-            to={"/contact"}
-          >
-            Contact
-          </Link>
-        </li>
-      </ul>
+      <div className="hidden md:flex items-center gap-2">
+        <HeaderMenuButton icon={<IoHome />} link="/" name="Home" key={"home"} />
+        <HeaderMenuButton
+          icon={<BsFillFolderFill />}
+          link="/projects"
+          name="Projects"
+          key={"home"}
+        />
+        <HeaderMenuButton
+          icon={<AiFillCheckCircle />}
+          link="/skills"
+          name="Skills"
+          key={"home"}
+        />
+        <HeaderMenuButton
+          icon={<GoLog />}
+          link="/blog"
+          name="Blog"
+          key={"home"}
+        />
+        <HeaderMenuButton
+          icon={<AiFillBook />}
+          link="/reading"
+          name="Reading List"
+          key={"home"}
+        />
+      </div>
     </header>
   );
 }
