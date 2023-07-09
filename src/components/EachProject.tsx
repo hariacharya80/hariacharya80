@@ -22,7 +22,7 @@ function EachProject({
       <div className="hidden md:flex px-5 rounded-xl items-center justify-center w-1/12 bg-black h-fit">
         <h1 className="font-bold text-8xl rounded-full text-white">{num}</h1>
       </div>
-      <div className="flex w-full md:w-6/7 flex-col shadow-2xl  border-2 bg-slate-300 rounded-xl overflow-hidden">
+      <div className="flex w-full transition  hover:scale-110  md:w-6/7 flex-col shadow-2xl  border-2 border-slate-300 bg-slate-300 rounded-xl overflow-hidden">
         <img src={projectImage} />
         <div className="flex flex-col md:flex-row justify-between px-2 items-center">
           <div className="w-2/3">

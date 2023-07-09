@@ -2,6 +2,7 @@ import EachProject from "./EachProject";
 
 function ProjectsSection() {
   return (
+    //project code is the github link, project link is the download link, preview is the live deployment url.
     <div className="flex flex-col items-center mt-[4vh] gap-[4vh]">
       <EachProject
         num="1"
